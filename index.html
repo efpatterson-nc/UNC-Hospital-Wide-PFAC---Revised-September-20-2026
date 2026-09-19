@@ -1,0 +1,522 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A mobile-first concept prototype for UNC Hospitals Patient and Family Advisory Councils.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#13294b">
+  <meta name="color-scheme" content="light">
+  <title>UNC Hospitals PFAC Concept Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="prototype-notice" role="status">
+    <strong>Concept prototype:</strong> This is not an official UNC Health website. The demonstration form does not send or save information.
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="UNC Health PFAC concept home">
+        <span class="brand-name">UNC Health</span>
+        <span class="brand-subtitle">PFAC concept</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Open navigation menu</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#what-advisors-do">What advisors do</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#councils">Find a council</a>
+        <a class="nav-cta" href="#apply">Start interest form</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-image-wrap">
+          <picture>
+            <!-- Tighter crop for phones: larger faces, easier to read on small screens -->
+            <source media="(max-width: 800px)" srcset="assets/pfac-hero-mobile.png">
+            <!-- Wide version for tablets and desktop -->
+            <img class="hero-image" src="assets/pfac-hero.png" alt="A diverse group of patients, family members, and a healthcare professional meeting together around a table in a bright hospital conference room.">
+          </picture>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Patient and Family Advisory Councils</p>
+          <h1 id="hero-title">Help improve care at UNC Hospitals</h1>
+          <p class="hero-intro">Patients, family members, and caregivers can share their experiences and help make care safer, clearer, and more supportive.</p>
+
+          <div class="benefit-row" aria-label="Benefits of serving">
+            <div class="benefit-pill">
+              <span class="icon-circle" aria-hidden="true">💬</span>
+              <span>Share your experience</span>
+            </div>
+            <div class="benefit-pill">
+              <span class="icon-circle" aria-hidden="true">♡</span>
+              <span>Make care better</span>
+            </div>
+            <div class="benefit-pill">
+              <span class="icon-circle" aria-hidden="true">✓</span>
+              <span>Help in meaningful ways</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#apply">
+              <span aria-hidden="true">✦</span>
+              Start the 2-minute interest form
+            </a>
+            <a class="button button-secondary" href="#councils">
+              <span aria-hidden="true">⌖</span>
+              Find the right council
+            </a>
+          </div>
+          <p class="reassurance">This short form is a first step. Formal volunteer onboarding would come later.</p>
+        </div>
+      </div>
+
+      <div class="quick-facts" aria-label="Key facts">
+        <article class="fact-card">
+          <span class="fact-icon" aria-hidden="true">
+            <!-- Shield icon: trust / two-year term -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M12 2 L20 6 V12 C20 17.5 12 22 12 22 C12 22 4 17.5 4 12 V6 Z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </span>
+          <strong>Most advisors serve for two years</strong>
+          <span>Terms may be extended.</span>
+        </article>
+        <article class="fact-card">
+          <span class="fact-icon" aria-hidden="true">
+            <!-- Clock icon: care within three years -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 7 12 12 15.5 14"/>
+            </svg>
+          </span>
+          <strong>Care within the past three years</strong>
+          <span>You or a family member received care.</span>
+        </article>
+        <article class="fact-card">
+          <span class="fact-icon" aria-hidden="true">
+            <!-- Smartphone icon: mobile-friendly -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="7" y="2" width="10" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </span>
+          <strong>Designed for mobile use</strong>
+          <span>Large controls and short, clear steps.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad" id="what-advisors-do" aria-labelledby="advisor-work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Your voice can make a difference</p>
+        <h2 id="advisor-work-title">What patient and family advisors do</h2>
+        <p>Advisors work with hospital staff to improve safety, quality, communication, and the overall experience of care.</p>
+      </div>
+
+      <div class="card-grid four-up">
+        <article class="info-card">
+          <span class="large-icon" aria-hidden="true">💬</span>
+          <h3>Make care safer and better</h3>
+          <p>Help improve patient safety, the quality of care, and the experiences of patients, families, and staff.</p>
+        </article>
+        <article class="info-card">
+          <span class="large-icon" aria-hidden="true">📄</span>
+          <h3>Shape how families are involved</h3>
+          <p>Give advice on the best ways to support families and caregivers and make it easier for families to take part in care.</p>
+        </article>
+        <article class="info-card">
+          <span class="large-icon" aria-hidden="true">♡</span>
+          <h3>Share experiences to help others</h3>
+          <p>Talk with hospital groups to improve their support of patient- and family-centered care.</p>
+        </article>
+        <article class="info-card">
+          <span class="large-icon" aria-hidden="true">◎</span>
+          <h3>Speak up for the whole community</h3>
+          <p>Make sure different voices are heard and that everyone's opinions are respected.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="soft-section" id="eligibility" aria-labelledby="eligibility-title">
+      <div class="section-shell section-pad eligibility-grid">
+        <div>
+          <p class="eyebrow">Quick eligibility check</p>
+          <h2 id="eligibility-title">Could advising be right for you?</h2>
+          <p>Answer three short questions. This check is only a guide and does not submit any information.</p>
+          <ul class="plain-checklist">
+            <li>You are a patient, family member, or caregiver.</li>
+            <li>You are willing to listen, collaborate, and offer constructive feedback.</li>
+            <li>You may be able to participate regularly for about two years.</li>
+          </ul>
+        </div>
+
+        <form class="eligibility-card" id="eligibility-form" novalidate>
+          <fieldset>
+            <legend>1. Did you or a family member receive care at UNC Hospitals in the past three years?</legend>
+            <div class="choice-row">
+              <label class="choice-chip"><input type="radio" name="recent-care" value="yes" required> Yes</label>
+              <label class="choice-chip"><input type="radio" name="recent-care" value="no"> No</label>
+              <label class="choice-chip"><input type="radio" name="recent-care" value="unsure"> Not sure</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>2. Are you comfortable sharing ideas and hearing different points of view?</legend>
+            <div class="choice-row">
+              <label class="choice-chip"><input type="radio" name="collaborate" value="yes" required> Yes</label>
+              <label class="choice-chip"><input type="radio" name="collaborate" value="no"> Not yet</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>3. Could you consider a two-year term if the meeting schedule works for you?</legend>
+            <div class="choice-row">
+              <label class="choice-chip"><input type="radio" name="term" value="yes" required> Yes</label>
+              <label class="choice-chip"><input type="radio" name="term" value="unsure"> I need details</label>
+              <label class="choice-chip"><input type="radio" name="term" value="no"> No</label>
+            </div>
+          </fieldset>
+          <button class="button button-primary" type="submit">Check my fit</button>
+          <div class="form-result" id="eligibility-result" role="status" tabindex="-1"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad" id="councils" aria-labelledby="councils-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Match experience to opportunity</p>
+          <h2 id="councils-title">Find the council that fits your experience</h2>
+          <p>Choose an area of care. You can also select “I’m not sure” and ask the PFAC team to help.</p>
+        </div>
+        <label class="filter-control" for="council-filter">
+          <span>Show councils for</span>
+          <select id="council-filter">
+            <option value="all">All areas of care</option>
+            <option value="specialty">Specialty and outpatient care</option>
+            <option value="family">Women, children, and family care</option>
+            <option value="recovery">Mental health and recovery</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="council-grid" id="council-grid">
+        <article class="council-card" data-category="specialty">
+          <div><span class="council-icon" aria-hidden="true">🧠</span><h3>Neurosurgery</h3></div>
+          <p>For patients and families with experience of specialized brain, spine, or neurosurgical care.</p>
+          <button type="button" class="council-cta choose-council" data-council="Neurosurgery">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="recovery">
+          <div><span class="council-icon" aria-hidden="true">☀</span><h3>Mental health</h3></div>
+          <p>For experience with child, adolescent, or adult behavioral health care in inpatient, outpatient, or virtual settings.</p>
+          <button type="button" class="council-cta choose-council" data-council="Mental health">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="family">
+          <div><span class="council-icon" aria-hidden="true">⌂</span><h3>Family medicine</h3></div>
+          <p>For experience with primary and family care across childhood, adulthood, and older age.</p>
+          <button type="button" class="council-cta choose-council" data-council="Family medicine">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="specialty">
+          <div><span class="council-icon" aria-hidden="true">✣</span><h3>Infectious disease</h3></div>
+          <p>For patients and families who received specialized care for complex or contagious diseases.</p>
+          <button type="button" class="council-cta choose-council" data-council="Infectious disease">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="recovery">
+          <div><span class="council-icon" aria-hidden="true">↗</span><h3>Rehabilitation therapies</h3></div>
+          <p>For experience with recovery, physical abilities, independence, and quality-of-life services.</p>
+          <button type="button" class="council-cta choose-council" data-council="Rehabilitation therapies">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="family">
+          <div><span class="council-icon" aria-hidden="true">♡</span><h3>N.C. Women’s Hospital</h3></div>
+          <p>For maternity, newborn, and NICU experiences involving patients, infants, and families.</p>
+          <button type="button" class="council-cta choose-council" data-council="N.C. Women’s Hospital">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="family">
+          <div><span class="council-icon" aria-hidden="true">★</span><h3>N.C. Children’s Hospital</h3></div>
+          <p>For children and families with experience across pediatric specialties and hospital services.</p>
+          <button type="button" class="council-cta choose-council" data-council="N.C. Children’s Hospital">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="specialty">
+          <div><span class="council-icon" aria-hidden="true">🎗</span><h3>N.C. Basnight Cancer Hospital</h3></div>
+          <p>For patients and caregivers who want to improve cancer care, support programs, and the treatment experience.</p>
+          <button type="button" class="council-cta choose-council" data-council="N.C. Basnight Cancer Hospital">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card" data-category="specialty">
+          <div><span class="council-icon" aria-hidden="true">＋</span><h3>Eastowne Medical Office Building</h3></div>
+          <p>For experience with clinics, testing, infusions, clinical trials, pharmacy, or other Eastowne services.</p>
+          <button type="button" class="council-cta choose-council" data-council="Eastowne Medical Office Building">Choose this council <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="council-card council-card-help" data-category="all specialty family recovery">
+          <div><span class="council-icon" aria-hidden="true">?</span><h3>I’m not sure</h3></div>
+          <p>That is fine. Share the general area of care, and the PFAC team can help identify a possible fit.</p>
+          <button type="button" class="council-cta choose-council" data-council="I’m not sure — please help me choose">Ask for help choosing <span aria-hidden="true">→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="warm-section" aria-labelledby="next-steps-title">
+      <div class="section-shell section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">A clear path forward</p>
+          <h2 id="next-steps-title">What happens next</h2>
+        </div>
+        <ol class="step-list">
+          <li><span>1</span><div class="step-content"><h3>Tell us you are interested</h3><p>Complete a short, mobile-friendly interest form.</p></div></li>
+          <li><span>2</span><div class="step-content"><h3>Talk with a PFAC coordinator</h3><p>Ask questions and discuss your experience, interests, and availability.</p></div></li>
+          <li><span>3</span><div class="step-content"><h3>Find the right council</h3><p>Confirm the council and meeting schedule that best fit.</p></div></li>
+          <li><span>4</span><div class="step-content"><h3>Complete volunteer onboarding</h3><p>If selected, complete the required background check, vaccination documentation, and volunteer training.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad" id="apply" aria-labelledby="application-title">
+      <div class="application-intro">
+        <div>
+          <p class="eyebrow">Demonstration application template</p>
+          <h2 id="application-title">Patient and Family Advisor interest form</h2>
+          <p>This prototype shows how an application could work on a phone. It intentionally asks for limited information and does not request medical record numbers, detailed diagnoses, or other clinical information.</p>
+        </div>
+        <div class="privacy-note" role="note">
+          <strong>Demo only</strong>
+          <p>Nothing entered here is transmitted or stored. Please do not enter real personal or health information.</p>
+        </div>
+      </div>
+
+      <div class="form-shell" id="application-shell">
+        <div class="progress-wrap" aria-label="Application progress">
+          <div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div>
+          <ol class="progress-steps">
+            <li class="is-current" data-progress-step="1"><span>1</span><span>About you</span></li>
+            <li data-progress-step="2"><span>2</span><span>Your experience</span></li>
+            <li data-progress-step="3"><span>3</span><span>Your interests</span></li>
+            <li data-progress-step="4"><span>4</span><span>Review</span></li>
+          </ol>
+        </div>
+
+        <form id="interest-form" novalidate>
+          <div class="form-error-summary" id="form-error-summary" role="alert" tabindex="-1" hidden></div>
+
+          <section class="form-step is-active" data-step="1" aria-labelledby="step-1-title" aria-describedby="step-1-hint">
+            <div class="step-heading">
+              <p>Step 1 of 4</p>
+              <h3 id="step-1-title">Tell us how to reach you</h3>
+              <span id="step-1-hint">Fields marked “required” must be completed.</span>
+            </div>
+            <div class="field-grid two-columns">
+              <div class="field-group">
+                <label for="full-name">Full name <span aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+                <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+              </div>
+              <div class="field-group">
+                <label for="preferred-name">Preferred name <span class="optional">optional</span></label>
+                <input id="preferred-name" name="preferredName" type="text" autocomplete="nickname">
+              </div>
+              <div class="field-group">
+                <label for="email">Email address <span aria-hidden="true">*</span><span class="sr-only"> required</span></label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required>
+              </div>
+              <div class="field-group">
+                <label for="phone">Phone number <span class="optional">optional</span></label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+              </div>
+            </div>
+            <fieldset class="field-group">
+              <legend>How would you prefer to be contacted? <span aria-hidden="true">*</span><span class="sr-only"> required</span></legend>
+              <div class="choice-grid">
+                <label class="select-card"><input type="radio" name="contactPreference" value="Email" required><span>Email</span></label>
+                <label class="select-card"><input type="radio" name="contactPreference" value="Phone"><span>Phone</span></label>
+                <label class="select-card"><input type="radio" name="contactPreference" value="Either"><span>Either</span></label>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="form-step" data-step="2" aria-labelledby="step-2-title" aria-describedby="step-2-hint" hidden>
+            <div class="step-heading">
+              <p>Step 2 of 4</p>
+              <h3 id="step-2-title">Tell us about your connection to care</h3>
+              <span id="step-2-hint">Please keep answers general. Do not include diagnoses, medical record numbers, or detailed clinical information.</span>
+            </div>
+            <fieldset class="field-group">
+              <legend>I am applying as a… <span aria-hidden="true">*</span><span class="sr-only"> required</span></legend>
+              <div class="choice-grid two-up-mobile">
+                <label class="select-card"><input type="checkbox" name="role" value="Patient"><span>Patient</span></label>
+                <label class="select-card"><input type="checkbox" name="role" value="Family member"><span>Family member</span></label>
+                <label class="select-card"><input type="checkbox" name="role" value="Caregiver"><span>Caregiver</span></label>
+                <label class="select-card"><input type="checkbox" name="role" value="Other supporter"><span>Other supporter</span></label>
+              </div>
+              <p class="field-help">Select all that apply.</p>
+            </fieldset>
+            <fieldset class="field-group">
+              <legend>Did you or a family member receive care at UNC Hospitals within the past three years? <span aria-hidden="true">*</span><span class="sr-only"> required</span></legend>
+              <div class="choice-grid">
+                <label class="select-card"><input type="radio" name="careWithinThreeYears" value="Yes" required><span>Yes</span></label>
+                <label class="select-card"><input type="radio" name="careWithinThreeYears" value="No"><span>No</span></label>
+                <label class="select-card"><input type="radio" name="careWithinThreeYears" value="Not sure"><span>Not sure</span></label>
+              </div>
+            </fieldset>
+            <div class="field-group">
+              <label for="care-area">In a few words, what general area of care connects you to UNC Hospitals? <span class="optional">optional</span></label>
+              <input id="care-area" name="careArea" type="text" maxlength="120" placeholder="Example: cancer care, children’s care, rehabilitation">
+              <p class="field-help">Keep this broad. Detailed medical information is not needed.</p>
+            </div>
+          </section>
+
+          <section class="form-step" data-step="3" aria-labelledby="step-3-title" aria-describedby="step-3-hint" hidden>
+            <div class="step-heading">
+              <p>Step 3 of 4</p>
+              <h3 id="step-3-title">Tell us where you may want to help</h3>
+            <span id="step-3-hint" class="sr-only">Step 3 of 4. Select councils and participation preferences.</span></div>
+            <fieldset class="field-group">
+              <legend>Which council interests you? <span aria-hidden="true">*</span><span class="sr-only"> required</span></legend>
+              <div class="checkbox-list" id="council-options">
+                <label><input type="checkbox" name="council" value="Neurosurgery"> Neurosurgery</label>
+                <label><input type="checkbox" name="council" value="Mental health"> Mental health</label>
+                <label><input type="checkbox" name="council" value="Family medicine"> Family medicine</label>
+                <label><input type="checkbox" name="council" value="Infectious disease"> Infectious disease</label>
+                <label><input type="checkbox" name="council" value="Rehabilitation therapies"> Rehabilitation therapies</label>
+                <label><input type="checkbox" name="council" value="N.C. Women’s Hospital"> N.C. Women’s Hospital</label>
+                <label><input type="checkbox" name="council" value="N.C. Children’s Hospital"> N.C. Children’s Hospital</label>
+                <label><input type="checkbox" name="council" value="N.C. Basnight Cancer Hospital"> N.C. Basnight Cancer Hospital</label>
+                <label><input type="checkbox" name="council" value="Eastowne Medical Office Building"> Eastowne Medical Office Building</label>
+                <label><input type="checkbox" name="council" value="I’m not sure — please help me choose"> I’m not sure — please help me choose</label>
+              </div>
+              <p class="field-help">Select one or more.</p>
+            </fieldset>
+
+            <fieldset class="field-group">
+              <legend>How could you participate? <span aria-hidden="true">*</span><span class="sr-only"> required</span></legend>
+              <div class="choice-grid">
+                <label class="select-card"><input type="radio" name="participation" value="In person" required><span>In person</span></label>
+                <label class="select-card"><input type="radio" name="participation" value="Virtual"><span>Virtual</span></label>
+                <label class="select-card"><input type="radio" name="participation" value="Either"><span>Either</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-group">
+              <label for="interest-reason">Why are you interested in becoming a patient and family advisor? <span class="optional">optional</span></label>
+              <textarea id="interest-reason" name="interestReason" rows="6" maxlength="750" aria-describedby="interest-counter"></textarea>
+              <div class="counter" id="interest-counter" aria-live="polite" aria-atomic="true">0 of 750 characters</div>
+            </div>
+
+            <fieldset class="field-group">
+              <legend>Would you like someone to contact you about language assistance, disability access, transportation, or another participation need?</legend>
+              <div class="choice-grid">
+                <label class="select-card"><input type="radio" name="supportContact" value="Yes"><span>Yes</span></label>
+                <label class="select-card"><input type="radio" name="supportContact" value="No"><span>No</span></label>
+                <label class="select-card"><input type="radio" name="supportContact" value="Maybe"><span>Maybe</span></label>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="form-step" data-step="4" aria-labelledby="step-4-title" aria-describedby="step-4-hint" hidden>
+            <div class="step-heading">
+              <p>Step 4 of 4</p>
+              <h3 id="step-4-title">Review your interest form</h3>
+              <span id="step-4-hint">In an official form, this page would let the applicant confirm or edit answers before submitting.</span>
+            </div>
+            <div class="review-panel" id="review-panel"></div>
+            <label class="confirmation-check">
+              <input type="checkbox" id="accuracy-confirmation" name="accuracyConfirmation" required>
+              <span>I confirm that the information is accurate and that I did not include detailed medical or clinical information.</span>
+            </label>
+            <label class="confirmation-check">
+              <input type="checkbox" id="contact-consent" name="contactConsent" required>
+              <span>I understand that submitting an official interest form would allow the PFAC team to contact me about possible service.</span>
+            </label>
+          </section>
+
+          <div class="form-navigation">
+            <button class="button button-secondary" id="back-button" type="button" hidden>Back</button>
+            <button class="button button-primary" id="next-button" type="button">Continue</button>
+            <button class="button button-primary" id="submit-button" type="submit" hidden>Submit demonstration form</button>
+          </div>
+        </form>
+
+        <section class="confirmation-panel" id="confirmation-panel" tabindex="-1" hidden aria-labelledby="confirmation-title">
+          <span class="confirmation-icon" aria-hidden="true">✓</span>
+          <p class="eyebrow">Demonstration complete</p>
+          <h3 id="confirmation-title">This is what a clear confirmation could look like</h3>
+          <p>No information was sent or saved. In a live system, the applicant would receive a confirmation, a copy of the next steps, and a reliable way to contact the PFAC team.</p>
+          <div class="confirmation-details" id="confirmation-details"></div>
+          <div class="confirmation-actions">
+            <button class="button button-primary" type="button" id="print-summary">Print or save this sample</button>
+            <button class="button button-secondary" type="button" id="start-over">Start over</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="soft-section" id="faq" aria-labelledby="faq-title">
+      <div class="section-shell section-pad faq-grid">
+        <div>
+          <p class="eyebrow">Questions applicants may have</p>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p>A strong recruitment page should answer practical questions before asking someone to complete a formal application.</p>
+        </div>
+        <div class="accordion">
+          <details>
+            <summary>Do I have to know which council is right for me? <span class="accordion-icon" aria-hidden="true"></span></summary>
+            <p>No. The interest form can include an “I’m not sure” option so a PFAC coordinator can help match your experience and interests.</p>
+          </details>
+          <details>
+            <summary>What is the time commitment? <span class="accordion-icon" aria-hidden="true"></span></summary>
+            <p>The current UNC Hospitals page says advisors generally commit to a two-year term. The final site should also state the actual meeting frequency, typical meeting length, and whether each council meets in person, virtually, or both.</p>
+          </details>
+          <details>
+            <summary>When would volunteer requirements be completed? <span class="accordion-icon" aria-hidden="true"></span></summary>
+            <p>After an applicant speaks with the PFAC team and a possible placement is identified, the person may need to complete a background check, vaccination documentation, and UNC Hospitals volunteer training.</p>
+          </details>
+          <details>
+            <summary>What information should not be entered? <span class="accordion-icon" aria-hidden="true"></span></summary>
+            <p>An initial interest form should not ask for a medical record number or detailed clinical history. It should collect only the information needed to contact the person and discuss possible service.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad contact-section" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">An essential alternate path</p>
+        <h2 id="contact-title">Prefer to talk with someone?</h2>
+        <p>The final page should offer a real telephone number, email address, and callback option for people who cannot or do not want to complete an online form.</p>
+      </div>
+      <div class="contact-placeholder">
+        <h3>PFAC contact information goes here</h3>
+        <span>Phone number &bull; Email address &bull; Request a callback</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-cta" aria-label="Quick action">
+    <a class="button button-primary" href="#apply">Start interest form</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-grid">
+      <div>
+        <strong>UNC Hospitals PFAC concept prototype</strong>
+        <p>Created to demonstrate a clearer, mobile-first recruitment and application experience.</p>
+      </div>
+      <div>
+        <p><strong>Not official.</strong> This prototype is not affiliated with or approved by UNC Health.</p>
+        <p>Content is based on the publicly available UNC Hospitals PFAC webpages and should be reviewed by UNC Hospitals before any official use.</p>
+        <a class="footer-back-top" href="#top">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"/></svg>
+          Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
